@@ -5,8 +5,35 @@
   background-size: cover;
 }
 
-.jumbotron p {
-  color: white;
+.nav {
+  z-index: 1;
+}
+
+.navigation-wrapper .icon-bar {
+  background: #337ab7;
+}
+
+.profileName {
+  float: left;
+}
+
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.carousel-caption h3, .carousel-caption p {
+  color: black;
+  font-family: "Book Antiqua", serif;
+}
+
+body {
+  background: none;
+}
+
+.col-md-4 h2, col-md-4 p {
+  font-family: serif;
+  color: #b6dded;
 }
 
 /*about page*/
@@ -34,7 +61,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #012f42;
+  /*background-color: #012f42;*/
 }
 
 .nav ul li {
@@ -54,7 +81,7 @@ body {
   transition: 600ms;
 }
 
-.header {
+.contact-header {
   font-family: "Goudy Old Style", serif;
   text-shadow: 4px 4px 4px #aaa;
   font-weight: 300;
@@ -68,14 +95,14 @@ body {
   font-size: 30px;
 }
 
-h3 {
+.contact h3 {
   font-weight: normal;
   font-size: 18px font-family: "Lucida Sans Typewriter", sans-serif;
   text-transform: uppercase;
   color: #b6dded;
 }
 
-p {
+.contact p {
   font-size: 18px;
   font-family: "Papyrus", sans-serif;
   font-weight: 300;
@@ -83,7 +110,7 @@ p {
 
 /*faq page*/
 
-.container {
+.container.margin-container {
   margin-top: 60px;
 }
 

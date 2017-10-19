@@ -21,18 +21,18 @@
       <li><a href="index.html">Home</a></li>
     </ul>
   </div>
-  <div class="container">
+  <div class="container margin-container">
     <div class="panel-header"><a href="#">FAQ</a></div>
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#missingcode" href="#collapseOne"><span class="glyphicon glyphicon-plus"></span>
+        <a role="button" data-toggle="collapse" data-parent="#accordian" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
           Why did you decide to become a web developer?
         </a>
       </h4>
         </div>
-        <div id="collapseOne" class="panel-collapse collapse in">
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
             Nowadays web development is very necessary. Because there are lot of business running through websites which needs web developers and designers. Websites runs in every Application so it Increase the need of web development. And also in today’s era the
             IT is having a good scope. So for those who have interest in creating something new and imaginary.
@@ -41,28 +41,28 @@
         </div>
       </div>
       <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading" role="tab" id="headingTwo">
           <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#missingcode" href="#collapseTwo"><span class="glyphicon glyphicon-plus"></span>
+        <a role="button" data-toggle="collapse" data-parent="#accordian" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
           What do you think that makes you a good web developer?
         </a>
       </h4>
         </div>
-        <div id="collapseTwo" class="panel-collapse collapse in">
+        <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body">
             First of all, I do love to solve problems, to find the best solutions. Second of all, I have a keen eye for details so if I am doing something, I really want to make it perfect! What are your future plans?
           </div>
         </div>
       </div>
       <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading" role="tab" id="headingThree">
           <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#missingcode" href="#collapseThree"><span class="glyphicon glyphicon-plus"></span>
+        <a role="button" data-toggle="collapse" data-parent="#accordian" href="#collapseThree"aria-expanded="true" aria-controls="collapseThree"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
           What are your future plans?
         </a>
       </h4>
         </div>
-        <div id="collapseThree" class="panel-collapse collapse in">
+        <div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingthree">
           <div class="panel-body">
             I am intending to finish the Career Foundry course and to find a job in the field as soon as possible.
           </div>
