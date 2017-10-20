@@ -61,7 +61,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  /*background-color: #012f42;*/
+  background-color: #012f42;
 }
 
 .nav ul li {

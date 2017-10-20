@@ -5,11 +5,9 @@
 body {
   background-color: #fffeea;
   color: #34495e;
-  margin: 20px;
 }
 
 .window {
-  margin: 0 auto;
   margin-top: 50px;
   width: 100%;
 }
@@ -18,8 +16,8 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: black;
-  left: 0;
+  background-color: #012f42;
+  margin-left: 0;
 }
 
 .nav ul li {
@@ -29,13 +27,12 @@ body {
 }
 
 .nav ul li a {
-  color: #255a70;
   text-transform: uppercase;
   letter-spacing: .05em;
 }
 
 .nav a:hover {
-  color: #fff;
+  color: #b6dded;
   text-decoration: none;
   transition: 600ms;
 }
