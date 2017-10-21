@@ -4,9 +4,16 @@
 
 /*index page*/
 
-.jumbotron {
-  background-image: url(../img/landscape.jpg);
+body {
+  position: relative;
+  /*background-image: url(../img/background.jpeg);*/
   background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.anchor {
+  padding-top: 50px;
 }
 
 .container-fluid.container-nav-bar {
@@ -14,10 +21,15 @@
 }
 
 .navigation-wrapper {
-  background-color: #012f42;
+  background-color: black;
+  padding: 15px;
 }
 
-.navbar-brand strong {
+.projectName {
+  text-transform: uppercase;
+}
+
+.projectName a {
   color: white;
 }
 
@@ -29,13 +41,17 @@
   background: #337ab7;
 }
 
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+
 .nav-item {
   text-transform: uppercase;
   letter-spacing: .05em;
 }
 
-.nav-link a:hover {
-  color: #b6dded;
+.nav>li>a:hover {
+  color: white;
   text-decoration: none;
   transition: 600ms;
 }
@@ -97,12 +113,16 @@
 
 /*contact page*/
 
-body {
-  background-image: url(../img/background.jpeg);
+#contact {
+  background-image: url("../img/space.jpg");
+  background-attachment: fixed;
   background-size: cover;
-  text-align: center;
-  color: #fff;
+  color: white;
+  padding: 100px;
+  padding-top: 50px;
 }
+
+/*parallax effect*/
 
 .contact-header {
   font-family: "Goudy Old Style", serif;
@@ -118,14 +138,14 @@ body {
   font-size: 30px;
 }
 
-.contact h3 {
+#detail h3 {
   font-weight: normal;
   font-size: 18px font-family: "Lucida Sans Typewriter", sans-serif;
   text-transform: uppercase;
   color: #b6dded;
 }
 
-.contact p {
+#detail p {
   font-size: 18px;
   font-family: "Papyrus", sans-serif;
   font-weight: 300;
@@ -152,7 +172,7 @@ body {
 }
 
 .panel-header a {
-  color: white;
+  color: black;
 }
 
 .panel-heading {
@@ -168,8 +188,10 @@ body {
 
 /*work page*/
 
-.header-work {
+.header-work a {
   text-align: center;
+  color: black;
+  text-decoration: none;
 }
 
 #colwork {

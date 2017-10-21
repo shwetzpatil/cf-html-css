@@ -24,52 +24,61 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <!-- <div class="jumbotron"> -->
   <!-- </div> -->
+
   <!-- Navigation bar -->
-  <div class="navbar-wrapper navigation-wrapper">
-    <nav class="navbar navbar-light">
-      <div class="container-fluid container-nav-bar">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false">
+  <nav class="navbar navigation-wrapper navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid anchor container-nav-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
+        <div class="navbar-brand projectName">
+          <a href="#">
             <strong>Shweta Patil</strong>
           </a>
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQ</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
-  </div>
+
+      <div class="navbar-collapse collapse" id="navbarMenu">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#work" id="dropdownMenu1">
+            Work <span class="caret"></span>
+          </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#worki">Work I</a></li>
+              <li><a href="#workii">Work II</a></li>
+            </ul>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
   <!-- /container -->
-  <div class="container-fluid">
+  <div class="container-fluid anchor">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -115,7 +124,7 @@
     </div>
   </div>
 
-  <div class="container margin-container">
+  <div class="container-fluid anchor margin-container">
     <!-- Example row of columns -->
     <div class="row">
       <div class="detail col-md-4">
@@ -140,63 +149,57 @@
       <!-- /col -->
     </div>
     <!-- /row -->
-
-    <hr>
-
-
   </div>
   <!--/container  -->
 
   <!-- about page -->
-  <div class="container-fluid container-about" id="about">
+  <div class="container-fluid anchor container-about" id="about">
     <div class="about-header">
       <h1><a href="#about">ABOUT</a></h1>
     </div>
-    <div class="container-fluid container-about-detail">
-      <div class="row" id="row-about-1">
-        <div class="col-xs-12 col-sm-6 col-md-4" id="about-1">
-          <div class="image column">
-            <img src="img/shwpic.jpg" alt="Shwetz">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4" id="about-2">
-          <div class="intro column">
-            <h1>Shweta Patil.</h1>
-            <p>
-              </strong>Upcoming Web developer. Artist. Designer.</strong>
-            </p>
-          </div>
-
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4" id="about-3">
-          <div class="skill column">
-            <h3>My skills</h3>
-            <ul id="skill-list">
-              <li>HTML/CSS</li>
-              <li>Java script</li>
-              <li>Web design</li>
-              <li>Ruby development</li>
-            </ul>
-          </div>
+    <div class="row" id="row-about-1">
+      <div class="col-xs-12 col-sm-6 col-md-4" id="about-1">
+        <div class="image column">
+          <img src="img/shwpic.jpg" alt="Shwetz">
         </div>
       </div>
-      <div class="row" id="row-about-2">
-        <div class="col-xs-12 col-sm-12 col-md-12" id="about-4">
-          <div class="info">
-            <h3>More about me:</h3>
-            <p>I would describe myself as a CURIOUS,OBSERVANT and SHARING person. Curious in finding errors and solving problems,learning new things. As a Observant learn things from others and last Sharing defines to share things what I know from learning.
-              Theses 3 objectives describe my good attitude. Life is quite exciting to me as it has galores of opportunities and experiences to offer and I feel one should always make the right use of it. I am adventurous by nature for I like to take
-              up new challenges. It gives me the zeal and impetus to work towards excellence. One thing I firmly believe in is that one should always strive towards individual betterment, in whichever form it may be.
+      <div class="col-xs-12 col-sm-6 col-md-4" id="about-2">
+        <div class="intro column">
+          <h1>Shweta Patil.</h1>
+          <p>
+            </strong>Upcoming Web developer. Artist. Designer.</strong>
+          </p>
+        </div>
 
-            </p>
-          </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4" id="about-3">
+        <div class="skill column">
+          <h3>My skills</h3>
+          <ul id="skill-list">
+            <li>HTML/CSS</li>
+            <li>Java script</li>
+            <li>Web design</li>
+            <li>Ruby development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="row-about-2">
+      <div class="col-xs-12 col-sm-12 col-md-12" id="about-4">
+        <div class="info">
+          <h3>More about me:</h3>
+          <p>I would describe myself as a CURIOUS,OBSERVANT and SHARING person. Curious in finding errors and solving problems,learning new things. As a Observant learn things from others and last Sharing defines to share things what I know from learning.
+            Theses 3 objectives describe my good attitude. Life is quite exciting to me as it has galores of opportunities and experiences to offer and I feel one should always make the right use of it. I am adventurous by nature for I like to take up
+            new challenges. It gives me the zeal and impetus to work towards excellence. One thing I firmly believe in is that one should always strive towards individual betterment, in whichever form it may be.
+
+          </p>
         </div>
       </div>
     </div>
   </div>
 
   <!--contact page  -->
-  <div class="container-fluid container-contact" id="contact">
+  <div class="container-fluid anchor container-contact" id="contact">
     <div class="contact-header">
       <h1><a href="#contact">CONTACT</a></h1>
     </div>
@@ -204,15 +207,15 @@
       <h2>Let's communicate</h2>
       <h1>SHWETA PATIL<h1>
     </div>
-    <div class="contact email">
+    <div class="email" id="detail">
       <h3><a href="#"><span class="glyphicon glyphicon-envelope">...</span></a>Email</h3>
       <p>shwetzpatil@gmail.com</p>
     </div>
-    <div class="contact Phone">
+    <div class="Phone" id="detail">
       <h3><a href="#"><span class="glyphicon glyphicon-phone">...</span></a>Phone No</h3>
       <p>+447438856372</p>
     </div>
-    <div class="contact add">
+    <div class="add" id="detail">
       <h3><a href="#"><span class="glyphicon glyphicon-home">...</span></a>Address</h3>
       <p>
         Hurricane House</br>
@@ -223,8 +226,9 @@
       </p>
     </div>
    </div>
+
   <!-- work page -->
-  <div class="container-fluid container-work" id="work">
+  <div class="container-fluid anchor container-work" id="work">
     <div class="row" id="work">
       <div class="header-work">
         <h1><a href="#work">WORK</a></h1>
@@ -257,7 +261,7 @@
   </div>
   </div>
   <!--faq page  -->
-  <div class="container-fluid container-faq" id="faq">
+  <div class="container-fluid anchor container-faq" id="faq">
     <div class="panel-header">
       <h1><a href="#faq">FAQ</a></h1>
     </div>
@@ -309,6 +313,7 @@
     </div>
   </div>
 
+
   <!-- ============================= -->
   <!-- All your JavaScript comes now -->
   <!-- ============================= -->
@@ -316,7 +321,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <!-- Can place script tags with JavaScript files here -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- smooth scrolling -->
+  <script type="text/javascript">
+    var $root = $('html, body');
+
+    $('.navbar-nav a').click(function() {
+      var href = $.attr(this, 'href');
+
+      if (href != undefined && href != '#') {
+        $root.animate({
+          scrollTop: $(href).offset().top
+        }, 500, function() {
+          window.location.hash = href;
+        });
+      }
+
+      return false;
+    });
+  </script>
 
 </body>
 
