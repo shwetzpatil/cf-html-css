@@ -9,11 +9,10 @@ body {
   /*background-image: url(../img/background.jpeg);*/
   background-size: cover;
   text-align: center;
-  color: #fff;
 }
 
 .anchor {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .container-fluid.container-nav-bar {
@@ -21,28 +20,24 @@ body {
 }
 
 .navigation-wrapper {
-  background-color: black;
+  background-colosr: black;
   padding: 15px;
 }
 
-.projectName {
+.project-name {
   text-transform: uppercase;
 }
 
-.projectName a {
+.project-name a {
   color: white;
 }
 
 .navbar-toggle {
-  border: 1px solid #337ab7 !important;
+  border: 1px solid white !important;
 }
 
 .navbar-toggle .icon-bar {
   background: #337ab7;
-}
-
-ul.nav li.dropdown:hover ul.dropdown-menu {
-  display: block;
 }
 
 .nav-item {
@@ -69,6 +64,10 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .detail h2, .detail p {
   font-family: serif;
   color: #b6dded;
+}
+
+.margin-container {
+  margin-bottom: 30px;
 }
 
 /*about page*/
@@ -194,6 +193,29 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   text-decoration: none;
 }
 
-#colwork {
+.colwork {
   padding: 10px;
+}
+
+#worki {
+  border: 1px solid black;
+}
+
+/*footer*/
+
+.footer-copyright {
+  text-align: right;
+  color: #F05D5E;
+  background-color: #2A2E47;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  clear: both;
+  line-height: 5px;
+}
+
+.footer-copyright p {
+  margin-bottom: 2px;
+  height: 20px;
+  line-height: 30px;
 }

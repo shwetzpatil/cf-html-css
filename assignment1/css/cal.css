@@ -1,0 +1,36 @@
+.header-cal h1 {
+  color: #21baa3;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Copperplate", sans-serif;
+  font-weight: 500;
+  text-shadow: 10px 10px 10px #aaa;
+}
+
+.calci {
+  border: 2px solid #677774;
+  height: 300px;
+  width: 320px;
+  background-color: #cee5e1;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 9px;
+}
+
+.text {
+  width: 285px;
+  height: 40px;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row5 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.btn {
+  border: 3px outset #677774;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #43f2d8;
+}
