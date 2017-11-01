@@ -2,14 +2,11 @@
   box-sizing: border-box;
 }
 
-/*index page*/
-
 body {
   position: relative;
-  /*background-image: url(../img/background.jpeg);*/
-  background-size: cover;
-  text-align: center;
 }
+
+/*index page*/
 
 .anchor {
   padding-top: 30px;
@@ -17,11 +14,6 @@ body {
 
 .container-fluid.container-nav-bar {
   padding: 0;
-}
-
-.navigation-wrapper {
-  background-colosr: black;
-  padding: 15px;
 }
 
 .project-name {
@@ -40,13 +32,17 @@ body {
   background: #337ab7;
 }
 
+div#navbar-menu {
+  margin-right: 10px;
+}
+
 .nav-item {
   text-transform: uppercase;
   letter-spacing: .05em;
 }
 
-.nav>li>a:hover {
-  color: white;
+#navbar-menu a:hover {
+  color: red;
   text-decoration: none;
   transition: 600ms;
 }
@@ -61,35 +57,32 @@ body {
   font-family: "Book Antiqua", serif;
 }
 
-.detail h2, .detail p {
-  font-family: serif;
-  color: #b6dded;
-}
-
 .margin-container {
   margin-bottom: 30px;
 }
 
 /*about page*/
 
+#about {
+  background-image: url("../img/aboutback.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .container-about {
-  background-color: #fffeea;
-  color: #34495e;
+  color: #f1f4f7;
   padding: 0;
   font-family: "Futura", Helvetica, Arial, sans-serif;
-}
+} 
 
 .about-header {
   margin-top: 50px;
   text-align: center;
 }
 
-.container-about-detail {
-  margin-top: 30px;
-}
-
-#row-about-1 {
-  text-align: center;
+.column img { 
+  margin-left: 50px;
+  width: 60%;
 }
 
 #skill-list {
@@ -110,6 +103,19 @@ body {
   padding: 50px 20px 0px 20px;
 }
 
+/*iframe*/
+
+#video-centre { 
+  margin-top: 20px;
+  text-align: center;
+  position: relative; 
+}
+
+.iframe-video {
+  margin: 10px;
+  padding: 10px;
+}
+
 /*contact page*/
 
 #contact {
@@ -123,31 +129,40 @@ body {
 
 /*parallax effect*/
 
-.contact-header {
+.contact-header h1, .contact-header a {
   font-family: "Goudy Old Style", serif;
   text-shadow: 4px 4px 4px #aaa;
   font-weight: 300;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.name {
-  margin-top: 100px;
+.contact-name {
   font-family: "Copperplate", sans-serif;
   font-weight: 500;
   text-shadow: 10px 10px 10px #aaa;
   font-size: 30px;
 }
 
-#detail h3 {
-  font-weight: normal;
-  font-size: 18px font-family: "Lucida Sans Typewriter", sans-serif;
-  text-transform: uppercase;
-  color: #b6dded;
+#detail p {
+  font-family: "Copperplate", sans-serif;  
+  font-weight: 700;
+  font-size: large;
+  color: white;
 }
 
-#detail p {
-  font-size: 18px;
-  font-family: "Papyrus", sans-serif;
-  font-weight: 300;
+/*work page*/
+
+.header-work h1, .header-work a{
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+#worki {
+  border: 1px solid black;
+  text-align: center;
 }
 
 /*faq page*/
@@ -173,6 +188,32 @@ body {
 .panel-header a {
   color: black;
 }
+/* modal button */
+
+.learn-more {
+  text-align: left;
+  float: left;
+  padding-left: 18px;
+}
+
+.modal-button {
+  float: right;
+  padding: 15px;
+}
+
+button.btn.btn-btn-primary {
+  background: skyblue;
+}
+
+.modal-content {
+  color: black;
+}
+
+#modalembed {
+  height: 500px;
+  width: 100%;
+  padding: 10px;s
+}
 
 .panel-heading {
   background-color: #b6dded;
@@ -183,22 +224,6 @@ body {
   background-color: #b6dded;
   font-size: 15px;
   color: #3a6a77;
-}
-
-/*work page*/
-
-.header-work a {
-  text-align: center;
-  color: black;
-  text-decoration: none;
-}
-
-.colwork {
-  padding: 10px;
-}
-
-#worki {
-  border: 1px solid black;
 }
 
 /*footer*/
@@ -212,7 +237,7 @@ body {
   padding: 20px;
   clear: both;
   line-height: 5px;
-  display: inline-flex;
+  display: block;
 }
 
 .footer-copyright p {
@@ -220,4 +245,8 @@ body {
   margin-bottom: 2px;
   height: 20px;
   line-height: 30px;
+}
+
+.footer a:active {
+  color: red;
 }
