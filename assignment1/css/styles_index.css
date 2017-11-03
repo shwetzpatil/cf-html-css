@@ -154,15 +154,32 @@ div#navbar-menu {
 
 /*work page*/
 
-.header-work h1, .header-work a{
+.header-work h1, .header-work a {
   text-align: center;
   color: black;
   text-decoration: none;
 }
+.work-img {
+  display: block;
+  margin: auto;
+  max-width: 200px;
+  position: relative;
+}
 
-#worki {
-  border: 1px solid black;
-  text-align: center;
+.info {
+  display: none;
+  position: absolute;
+  top: 15%;
+  color: #fff;
+  font-family: "Futura";
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+}
+
+.proj-title {
+  font-weight: 100;
 }
 
 /*faq page*/
@@ -212,7 +229,7 @@ button.btn.btn-btn-primary {
 #modalembed {
   height: 500px;
   width: 100%;
-  padding: 10px;s
+  padding: 10px;
 }
 
 .panel-heading {

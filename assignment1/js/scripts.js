@@ -1,16 +1,33 @@
 $(document).ready(function() {
   alert("document is ready!");
+
   // work section
-  for (var i = 0; i < works.length; ++i) {
+  for (var i = 0; i < works.length; i++) {
     $("#work").append(
       "\
-    <div class='col-xs-12 col-sm-6 col-md-3 colwork'>\
-      <img class='img-responsive' src='" +
-        works[i] +
+      <div class='col-xs-12 col-sm-6 col-md-3 colwork'>\
+        <a href=" +
+        works[i].url +
+        " class='work-img'>\
+          <img class='img-responsive' src='" +
+        works[i].pic +
         "'>\
-    </div>\
-  "
+          <span class='info'><p class='proj-title'>Title:</p> " +
+        works[i].title +
+        "</span>\
+        </a>\
+      </div>\
+    "
     );
+    $(".work-img")
+      .mouseenter(function() {
+        console.log(this);
+        $(".info", this).show();
+      })
+      .mouseleave(function() {
+        $(".info", this).hide();
+      });
+
     var images = $("#work img");
     if (i % 2 === 0) {
       $(images[i]).css("border", "solid red 2px");
