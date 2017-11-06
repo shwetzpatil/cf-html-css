@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  alert("document is ready!");
+  // alert("document is ready!");
 
   // work section
   for (var i = 0; i < works.length; i++) {
@@ -106,3 +106,32 @@ $(".message-box").on("keyup", function() {
     $("#charCount").css("color", "green");
   }
 });
+
+// map
+function initMap() {
+  var home = { lat: 51.408547, lng: -0.234229 };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: home
+  });
+  var marker = new google.maps.Marker({
+    position: home,
+    map: map,
+    title: "Hurricane House"
+  });
+
+  //Animate the marker
+  marker.addListener("click", toggleBounce);
+  function toggleBounce() {
+    if (marker.getAnimation() !== null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
+  //marker infoWindow
+  var infowindow = new google.maps.InfoWindow({
+    content: "<h5 style='color: black;'>My Home!</h5>"
+  });
+  infowindow.open(map, marker);
+}
