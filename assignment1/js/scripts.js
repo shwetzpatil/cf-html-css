@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // alert("document is ready!");
+  alert("document is ready!");
 
   // work section
   for (var i = 0; i < works.length; i++) {
@@ -88,7 +88,7 @@ $("#contact-submit").on("click", function() {
   if ($(".message-box").val() == "") {
     $(".message-box").css("border", "2px solid red");
   } else {
-    $("#visible-comment").html(comment);
+    $("#visible-comment").htmt(comment);
     $(".message-box").hide();
   }
   return false;

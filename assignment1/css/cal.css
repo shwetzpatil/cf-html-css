@@ -1,3 +1,8 @@
+body {
+  background-color: gray;
+  text-align: center;
+}
+
 .header-cal h1 {
   text-align: center;
   color: #21baa3;
@@ -19,24 +24,28 @@
   padding: 10px;
 }
 
-.text {
-  width: 285px;
-  height: 40px;
+.viewer {
+  margin: 10px 0;
+  width: auto;
+  height: 50px;
 }
 
-.row-1, .row-2, .row-3, .row-4, .row5 {
-  margin-bottom: 15px;
-  margin-top: 5px;
-}
-
-.btn {
-  border: 3px outset #677774;
+button {
+  /* border: 3px outset #677774; */
+  position: relative;
+  margin-top: 10px;
   height: 50px;
   width: 50px;
   cursor: pointer;
   font-size: 18px;
   background-color: #43f2d8;
+  text-decoration: none;
 }
-body{
+
+button:hover {
   background-color: gray;
+  /* transform: translateY(4px); */
+  /* opacity: 0.9; */
+  border: none;
 }
+
