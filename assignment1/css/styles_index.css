@@ -145,11 +145,20 @@ div#navbar-menu {
   font-size: 30px;
 }
 
-#detail p {
+#details p {
   font-family: "Copperplate", sans-serif;  
   font-weight: 700;
   font-size: large;
   color: white;
+}
+
+.contact-part2 {
+  margin-top: 100px;
+}
+
+#map {
+  height: 300px;
+  width: 400px;
 }
 
 /*work page*/
