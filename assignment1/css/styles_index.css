@@ -60,6 +60,10 @@ div#navbar-menu {
 .margin-container {
   margin-bottom: 30px;
 }
+.detail {
+  padding: 35px;
+  text-align: justify;
+}
 
 /*about page*/
 

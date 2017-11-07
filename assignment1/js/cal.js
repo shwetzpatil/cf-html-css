@@ -8,39 +8,72 @@ $(document).ready(function() {
       }
     }
   };
-  var number = "";
-  var newnumber = "";
+  var expressionstr = "";
+  var inputNumberStr = "";
+  var resultNumberStr = "";
+  var inputNumber = 0;
+  var resultNumber = 0;
   var operator = "";
   var totaldiv = $("#total");
-  totaldiv.text("0");
-  $("#numbers > a").not("#clear,#clearall").click(function() {
-    number += $(this).text();
-    totaldiv.text(number);
-    testNumLength(number);
+  totaldiv.text(resultNumber);
+  $("#numbers > a").not("#clear").click(function() {
+    inputNumberStr += $(this).text();
+    inputNumber = parseFloat(inputNumberStr);
+    expressionstr += inputNumberStr;
+    totaldiv.text(expressionstr);
+    testNumLength(inputNumberStr);
   });
   $("#operators > a").not("#equals").click(function() {
     operator = $(this).text();
-    newnumber = number;
-    number = "";
-    totaldiv.text(number);
+    expressionstr += operator;
+    resultNumber = inputNumber;
+    inputNumberStr = "";
+    inputNumber = 0;
+    totaldiv.text(expressionstr);
   });
   $("#clear").click(function() {
-    number = "";
-    totaldiv.text("0");
+    inputNumberStr = "";
+    resultNumberStr = "";
+    expressionstr = "";
+    inputNumber = 0;
+    resultNumber = 0;
+    totaldiv.text(expressionstr);
   });
   $("#equals").click(function() {
-    if (operator === "+") {
-      number = (parseInt(number, 10) + parseInt(newnumber, 10)).toString(10);
-    } else if (operator === "-") {
-      number = (parseInt(newnumber, 10) - parseInt(number, 10)).toString(10);
-    } else if (operator === "/") {
-      number = (parseInt(newnumber, 10) / parseInt(number, 10)).toString(10);
-    } else if (operator === "*") {
-      number = (parseInt(newnumber, 10) * parseInt(number, 10)).toString(10);
+    // if (operator === "+") {
+    //   number = parseFloat(number) + parseFloat(newnumber);
+    // } else if (operator === "-") {
+    //   number = parseFloat(newnumber) - parseFloat(number);
+    // } else if (operator === "/") {
+    //   number = parseFloat(newnumber) / parseFloat(number);
+    // } else if (operator === "*") {
+    //   number = parseFloat(newnumber) * parseFloat(number);
+    // }
+    // totaldiv.text(number.toFixed(3));
+    // testNumLength(number);
+    // number = "";
+    // newnumber = "";
+
+    // var operator;
+    switch (operator) {
+      case "+":
+        resultNumber = resultNumber + inputNumber;
+        break;
+      case "-":
+        resultNumber = resultNumber - inputNumber;
+        break;
+      case "*":
+        resultNumber = resultNumber * inputNumber;
+        break;
+      case "/":
+        resultNumber = resultNumber / inputNumber;
+        break;
+
+      default:
+        resultNumber = inputNumber;
+        break;
     }
-    totaldiv.text(number);
-    testNumLength(number);
-    number = "";
-    newnumber = "";
+    totaldiv.text(resultNumber.toFixed(3));
+    testNumLength(resultNumber);
   });
 });
