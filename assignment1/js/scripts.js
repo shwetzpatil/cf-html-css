@@ -82,23 +82,34 @@ $(".message-box").css("background-color", "skyblue");
 
 // on function
 $("#contact-submit").on("click", function() {
-  var comment = $(".message-box").val().toUpperCase();
+  var name = $("#form-name").val();
+  var email = $("#form-email").val();
+  var mobile = $("#form-mobile").val();
+  var comment = $("#message-box").val().toUpperCase();
   console.log(comment);
 
-  if ($(".message-box").val() == "") {
-    $(".message-box").css("border", "2px solid red");
+  if ($("#message-box").val() == "") {
+    $("#message-box").css("border", "2px solid red");
   } else {
-    $("#visible-comment").htmt(comment);
-    $(".message-box").hide();
+    $("#visible-comment").html(comment);
+    $("#visible-name").html(name);
+    $("#visible-email").html(email);
+    $("#visible-mobile").html(mobile);
+    $("#message-box").hide();
+    $("#form-name").hide();
+    $("#form-email").hide();
+    $("#form-mobile").hide();
+    $("#contact-submit").hide();
+    $("#charCount").hide();
   }
   return false;
 });
 
 //charCount
 
-$(".message-box").on("keyup", function() {
+$("#message-box").on("keyup", function() {
   console.log("keyup happened");
-  var charCount = $(".message-box").val().length;
+  var charCount = $("#message-box").val().length;
   $("#charCount").html(charCount);
   if (charCount > 50) {
     $("#charCount").css("color", "red");

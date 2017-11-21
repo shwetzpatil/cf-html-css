@@ -25,10 +25,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <!-- <div class="jumbotron"> -->
-  <!-- </div> -->
-
   <!-- Navigation bar -->
   <nav class="navbar navigation-wrapper navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid containe-nav-bar">
@@ -80,6 +76,7 @@
     </div>
   </nav>
   <!-- /Navigation bar -->
+
   <!-- Carousel -->
   <div class="container-fluid anchor">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -89,7 +86,6 @@
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
       </ol>
-
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -111,10 +107,7 @@
             <h3>Knowledge</h3>
           </div>
         </div>
-
       </div>
-
-
       <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -233,7 +226,7 @@
     </div>
     <div class="row">
       <div class="col-md-6 contact-part1">
-        <div class="detail contact-name">
+        <div class="contact-name">
           <h1>SHWETA PATIL
           </h1>
         </div>
@@ -262,31 +255,35 @@
           </p>
         </div>
         <div id="map">
-          <!-- <iframe width="400" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsSp-D-AIdkgRs2iaueiuq80&key=AIzaSyD4Y6kxDYJdf-ShvDLe6Anw4_LPicrLq5M"
-            allowfullscreen></iframe> -->
         </div>
       </div>
       <div class="col-md-6 contact-part2">
         <form>
           <div class="form-group">
-            <label for="form-name">Name</label>
+            <label for="form-name">Name : </label>
             <input class="form-control" type="text" placeholder="Name..." id="form-name" required="required">
+            <span class="visible-form" id="visible-name"></span>
           </div>
           <div class="form-group">
-            <label for="form-email">Email</label>
+            <label for="form-email">
+              <span class="glyphicon glyphicon-envelope"></span>
+              Email : </label>
             <input class="form-control" type="email" placeholder="Email..." id="form-email" required="required" />
+            <span class="visible-form" id="visible-email"></span>
           </div>
           <div class="form-group">
-            <label for="form-mobile">Contact No.</label>
+            <label for="form-mobile">Contact No. : </label>
             <input class="form-control" type="number" placeholder="Phone number..." id="form-mobile" required="required" />
+            <span class="visible-form" id="visible-mobile"></span>
           </div>
           <div class="form-group">
-            <label for="form-msg">Message
+            <label for="form-msg">Message :
               <span id="charCount"></span>
             </label>
-            <textarea class="form-control message-box" placeholder="Enter your message here" style="resize:none" cols="40" rows="5" id="form-msg"></textarea>
-            <p id="visible-comment"></p>
+            <textarea class="form-control" id="message-box" placeholder="Enter your message here" style="resize:none" cols="40" rows="5"
+              id="form-msg"></textarea>
           </div>
+          <span class="visible-form" id="visible-comment"></span>
           <button type="submit" class="btn btn-default" id="contact-submit">Submit</button>
         </form>
       </div>
